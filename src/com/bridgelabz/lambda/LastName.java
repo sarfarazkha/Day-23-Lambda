@@ -1,21 +1,23 @@
 package com.bridgelabz.lambda;
 
 import java.util.regex.Pattern;
-
-public interface FirstName {
+@FunctionalInterface
+public interface LastName {
     void validUser(String name);
 }
+
 class RegexLambdaExpression {
 
-    public static <Firstname> void main(String[] args) {
+    public static void main(String[] args) {
         System.out.println("Welcome to User Registration program");
-        Firstname function = (name) -> {
-            boolean check = Pattern.matches("([A-Z][a-z]{3,})", name);
+        LastName function = (name) -> {
+            boolean check = Pattern.matches("(^[A-Z]{1}[a-z]{2,})", name);
             if (check == true) {
-                System.out.println("Firstname is Valid");
+                System.out.println("Lastname is Valid");
             } else
                 System.out.println("Enter valid name");
+
         };
-        function.Validuser("sarfaraz");
+        function.validUser("Khan");
     }
 }
