@@ -1,21 +1,21 @@
 package com.bridgelabz.lambda;
 
+
+
 import java.util.regex.Pattern;
 @FunctionalInterface
-interface Password {
+interface PasswordRule3{
     void validUser(String password);
 }
-
-class RegexLambdaExpression4 {
+class RegexLambdaExpression6 {
 
     public static void main(String[] args) {
-        System.out.println("Welcome to User Registration program");
-        Password function = (password)->{
-            boolean check = Pattern.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&]).{8,}$",password);
+        PasswordRule3 function = (password)->{
+            boolean check = Pattern.matches("^(?=.*[0-9]{1,})(?=.*[a-z])(?=.*[A-Z]){1,}(?=.*[*.!@$%^&]).{8,}$",password);
             if (check == true) {
                 System.out.println("Password is Valid");
             }else
-                System.out.println("Enter valid password");
+                System.out.println("Password Is Invalid");
         };
         function.validUser("Saffu@2000");
     }
