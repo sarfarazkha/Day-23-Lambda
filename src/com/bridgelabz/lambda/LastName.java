@@ -6,7 +6,7 @@ public interface LastName {
     void validUser(String name);
 }
 
-class RegexLambdaExpression {
+class RegexLambdaExpression1 {
 
     public static void main(String[] args) {
         System.out.println("Welcome to User Registration program");
