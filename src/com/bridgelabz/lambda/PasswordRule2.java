@@ -6,7 +6,7 @@ interface PasswordRule2 {
     void validUser(String password);
 }
 
-class RegexLambdaExpression5 {
+class RegexLambdaExpression5 { 
 
     public static void main(String[] args) {
         PasswordRule2 function = (password) -> {
