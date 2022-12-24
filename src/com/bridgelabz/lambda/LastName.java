@@ -2,7 +2,7 @@ package com.bridgelabz.lambda;
 
 import java.util.regex.Pattern;
 @FunctionalInterface
-public interface LastName {
+public interface LastName { 
     void validUser(String name);
 }
 
