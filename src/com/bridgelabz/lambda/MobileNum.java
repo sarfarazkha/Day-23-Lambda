@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 interface MobileNumber {
     void validUser(String mobileNumber);
 }
-class RegexLambdaExpression3 {
+class RegexLambdaExpression3 { 
 
     public static void main(String[] args) {
         System.out.println("Welcome to User Registration program");
