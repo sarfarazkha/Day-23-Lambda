@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 interface PasswordRule {
     void validUser(String password);
 }
-class RegexLambdaExpression {
+class RegexLambdaExpression { 
 
     public static void main(String[] args) {
         PasswordRule function = (password)->{
