@@ -4,7 +4,7 @@ package com.bridgelabz.lambda;
 
 import java.util.regex.Pattern;
 @FunctionalInterface
-interface PasswordRule3{
+interface PasswordRule3{ 
     void validUser(String password);
 }
 class RegexLambdaExpression6 {
