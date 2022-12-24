@@ -1,7 +1,7 @@
 package com.bridgelabz.lambda;
 
 import java.util.regex.Pattern;
-@FunctionalInterface
+@FunctionalInterface 
 interface EmailId {
     void validUser(String email);
 }
