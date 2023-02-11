@@ -16,6 +16,6 @@ class RegexLambdaExpression {
             } else
                 System.out.println("Enter valid name");
         };
-        function.validUser("sarfaraz");
+        function.validUser("sarfaraaz");
     }
 }
